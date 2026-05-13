@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install *)",
+      "Bash(python build.py)",
+      "Bash(timeout 3 \"D:/AI/Claude Code/JSONTool/dist/JSONTool.exe\")",
+      "Bash(python -c \"import json_tool; print\\('OK'\\)\")",
+      "Bash(echo '{\"tags\": \"[\\\\\"\\\\\\\\u8179\\\\\\\\u9ed1\\\\\",\\\\\"\\\\\\\\u75af\\\\\\\\u6279\\\\\",\\\\\"\\\\\\\\u5fe0\\\\\\\\u8bda\\\\\",\\\\\"\\\\\\\\u5360\\\\\\\\u6709\\\\\\\\u6b32\\\\\\\\u5f3a\\\\\",\\\\\"\\\\\\\\u63a7\\\\\\\\u5236\\\\\\\\u6b32\\\\\\\\u5f3a\\\\\",\\\\\"\\\\\\\\u504f\\\\\\\\u6267\\\\\\\\u5f3a\\\\\",\\\\\"\\\\\\\\u8650\\\\\\\\u604b\\\\\\\\u503e\\\\\\\\u5411\\\\\"]\"}')",
+      "Bash(python3 -c ' *)",
+      "Bash(node -e ' *)",
+      "Bash(gh api *)",
+      "Bash(.venv/Scripts/python.exe build.py)",
+      "Bash(gh auth *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(gh repo *)",
+      "Bash(.venv/Scripts/python.exe -c \"from PIL import Image, ImageDraw, ImageFont; print\\('Pillow OK'\\)\")",
+      "Bash(.venv/Scripts/pip.exe install *)",
+      "Bash(.venv/Scripts/python.exe make_icon.py)"
+    ]
+  }
+}
