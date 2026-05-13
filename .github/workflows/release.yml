@@ -1,0 +1,32 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build exe
+        run: |
+          python -m PyInstaller --noconfirm --onefile --windowed --name JSONTool --icon icon.ico --add-data "$(python -c "import customtkinter, os; print(os.path.join(os.path.dirname(customtkinter.__file__), 'assets'))");customtkinter/assets/" json_tool.py
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/JSONTool.exe
+          generate_release_notes: true
