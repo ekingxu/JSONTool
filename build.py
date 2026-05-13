@@ -30,7 +30,7 @@ def main():
         "--onefile",
         "--windowed",
         "--name", "JSONTool",
-        "--icon", "icon.ico",  # 新增：指定图标文件（推荐使用 .ico 格式）
+        "--icon", "icon.png",
         "--add-data", f"{assets_path};customtkinter/assets/",
         "json_tool.py",
     ]
