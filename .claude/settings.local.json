@@ -17,7 +17,10 @@
       "Bash(gh repo *)",
       "Bash(.venv/Scripts/python.exe -c \"from PIL import Image, ImageDraw, ImageFont; print\\('Pillow OK'\\)\")",
       "Bash(.venv/Scripts/pip.exe install *)",
-      "Bash(.venv/Scripts/python.exe make_icon.py)"
+      "Bash(.venv/Scripts/python.exe make_icon.py)",
+      "Bash(git status *)",
+      "Bash(git push *)",
+      "Bash(git tag *)"
     ]
   }
 }
